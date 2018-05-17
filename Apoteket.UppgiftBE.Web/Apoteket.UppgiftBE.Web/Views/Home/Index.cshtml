@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "eFrukt - Produktlista";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <h2>@ViewBag.Title</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        Produkt 1
+    </div>
+    <div class="col-sm-4">
+        10 kr
+    </div>
+    <div class="col-sm-4">
+        <a class="btn btn-success" href="@Url.Action("Add", "Basket", new {id=1}, Request.Url.Scheme)">Köp</a>
+    </div>
+</div>
+
